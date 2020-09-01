@@ -1,0 +1,10 @@
+[submodule "themes/hugo-future-imperfect-slim"]
+	path = themes/hugo-future-imperfect-slim
+	url = https://github.com/pacollins/hugo-future-imperfect-slim.git
+[submodule "themes/mainroad"]
+	path = themes/mainroad
+	url = https://github.com/vimux/mainroad
+[submodule "public"]
+	path = public
+	url = https://github.com/chupark/chupark.github.io.git
+	branch = master
