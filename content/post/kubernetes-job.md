@@ -1,11 +1,12 @@
 ---
-title: "Kubernetes Daemonset"
-date: 2020-09-03T11:06:22+09:00
+title: "Kubernetes Job"
+date: 2020-09-03T14:53:38+09:00
 categories:
   - "kubernetes pod"
 tags:
   - "kubernetes"
 comments: true
+draft: true
 ---
 
 # Daemonset, 데몬셋
@@ -22,34 +23,3 @@ comments: true
 특정 그룹의 노드에 데몬셋 포드를 배포하고 싶을 경우, 데몬셋의 포드 템플릿에서 node-Selector 속성을 지정하여 원하는 노드에만 포드를 배포할 수 있다.
 　  
 <br>
-　  
-
-### 데몬셋 정의
-----
-아래 예시처럼 SSD를 사용하는 노드가 있다고 가정하고 5초마다 "SSD OK"를 표준 출력에 보여주는 ssd-monitor 프로세스를 실행하는 데몬셋을 생성해본다.  
-````yaml
-apiVersion: apps/v1
-kind: DaemonSet
-metadata:
-  name: ssd-monitor
-spec:
-  selector:
-    matchLabels:
-      app: ssd-monitor
-  template:
-    metadata:
-      labels:
-        app: ssd-monitor
-    spec:
-      nodeSelector:
-        ssd: "true"
-      containers:
-      - name: main
-        image: luksa/ssd-monitor
-````
-
-<br>
-
-그 결과 아래 그림처럼 SSD=true 라벨을 가진 노드에 데몬셋에 의해 만들어진 포드가 배포됐음을 확인할 수 있다. 만약 노드의 라벨이 SSD=false로 변경되거나 라벨이 삭제되면 해당 노드에 있는 데몬셋 포드는 삭제된다.
-
-{{< figure src="/img/daemonset/2.png" title="" >}}

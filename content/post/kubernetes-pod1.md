@@ -2,7 +2,7 @@
 title: "Kubernetes Pod"
 date: 2020-09-01T15:56:21+09:00
 categories:
-  - "kubernetes"
+  - "kubernetes pod"
 tags:
   - "kubernetes"
 comments: true
