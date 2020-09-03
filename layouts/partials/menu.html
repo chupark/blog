@@ -1,0 +1,37 @@
+<style>
+.menu__item {
+	text-align: center
+}
+
+.menu__link {
+	width: 120px
+}
+</style>
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				<span class="menu__text" style="text-align: center">Home</span>
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/about">
+				<span class="menu__text" style="text-align: center">About</span>
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/">
+				<span class="menu__text" style="text-align: center">{{ T "categories_title" }}</span>
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tags/">
+				<span class="menu__text">{{ T "tags_title" }}</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+
