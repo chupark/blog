@@ -6,6 +6,7 @@ categories:
 tags:
   - "kubernetes"
 comments: true
+draft: true
 ---
 
 # Daemonset, 데몬셋
@@ -26,6 +27,6 @@ comments: true
 
 ### 데몬셋 정의
 ----
-레플리카셋이 레플리케이션 컨트롤러와 다른점은 셀렉터다. 포드는 selector 속성 바로 아래에 있지 않고, selector.matchLabels 아래에 지정한다.
+
 
 {{< figure src="/img/daemonset/1.png" title="" >}}
