@@ -1,7 +1,7 @@
 baseurl = "https://chiwoo.bmdevs.com/"
 title = "나의 블로그"
 languageCode = "ko-kr"
-paginate = "10" # Number of posts per page
+paginate = "5" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "chiwoo-bmdevs-com" # Enable Disqus comments by entering your Disqus shortname
 googleAnalytics = "UA-177056541-1" # Enable Google Analytics by entering your tracking id
