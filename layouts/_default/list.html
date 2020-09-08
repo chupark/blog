@@ -10,9 +10,15 @@
 		{{ . }}
 	</div>
 	{{- end }}
-	{{- range .Paginator.Pages }}
-		{{- .Render "summary" }}
-	{{- end }}
+	{{ if eq .URL "/categories/"}}
+		{{- range .Paginator.Pages }}
+			{{- .Render "summary2" }}
+		{{- end }}
+	{{ else }}
+		{{- range .Paginator.Pages }}
+			{{- .Render "summary" }}
+		{{- end }}
+	{{ end }}
 </main>
 {{ partial "pagination.html" . }}
 {{ end }}
