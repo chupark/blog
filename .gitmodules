@@ -8,3 +8,6 @@
 	path = public
 	url = https://github.com/chupark/chupark.github.io.git
 	branch = master
+[submodule "Submod"]
+	url = https://github.com/chupark/chupark.github.io.git
+	branch = master
