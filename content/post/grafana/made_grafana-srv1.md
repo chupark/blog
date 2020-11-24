@@ -62,4 +62,4 @@ Grafana는 자체적으로 로그인 기능을 지원합니다. 또한 Oauth도 
 컨텐츠는 아래 목차로 진행될 예정 입니다.
 - Grafana 설치 & Azure 플러그인 사용
 - HTTPS, Grafana 로그인에 Azure AD 인증 사용
-- Slack 알림 구성하기
+- Slack 알림 구성
