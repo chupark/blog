@@ -6,8 +6,8 @@
 	url = https://github.com/vimux/mainroad
 [submodule "public"]
 	path = public
-	url = https://github.com/chupark/chupark.github.io
+	url = https://github.com/chupark/chupark.github.io.git
 	branch = master
 [submodule "Submod"]
-	url = https://github.com/chupark/chupark.github.io
+	url = https://github.com/chupark/chupark.github.io.git
 	branch = master
