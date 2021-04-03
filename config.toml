@@ -1,5 +1,5 @@
 baseurl = "https://chiwoo.bmdevs.com/"
-title = "나의 블로그"
+title = "IT 에서 살아남기"
 languageCode = "ko-kr"
 paginate = "5" # Number of posts per page
 theme = "mainroad"
@@ -8,8 +8,9 @@ googleAnalytics = "UA-177056541-1" # Enable Google Analytics by entering your tr
 
 [Author] # Used in authorbox
   name = "chupark"
-  bio = "경제적 자유를 위하여..."
-  avatar = "img/avatar.png"
+  bio = """Azure 클라우드 아키텍트로 활동하고 있습니다. \n
+  궁금한 점이 있다면 qkrcldn12@gmail.com 으로 메일 부탁 드립니다!"""
+  avatar = "img/me/me.jpg"
 
 [Params]
   subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
@@ -43,8 +44,8 @@ googleAnalytics = "UA-177056541-1" # Enable Google Analytics by entering your tr
 
 [Params.logo]
   image = "img/placeholder.png" # Logo image. Path relative to "static"
-  title = "내 블로그" # Logo title, otherwise will use site title
-  subtitle = "어서 오셔요" # Logo subtitle
+  title = "IT 에서 살아남기" # Logo title, otherwise will use site title
+  subtitle = "이곳은 정글..." # Logo subtitle
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
@@ -58,3 +59,8 @@ googleAnalytics = "UA-177056541-1" # Enable Google Analytics by entering your tr
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  linkedin = "chi-woo-park-b66b3416b"
+  github = "chupark"
+  email = "qkrcldn12@gmail.com"
